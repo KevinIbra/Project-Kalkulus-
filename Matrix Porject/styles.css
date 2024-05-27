@@ -1,0 +1,345 @@
+header {
+    background-color: #E0B0FF; /* Lilac color */
+    color: white;
+    padding: 50px 0px;
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+/* CSS umum untuk semua halaman */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #f8f9fa;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+
+
+/* Footer styling */
+footer {
+    background-color: #333; /* Dark background for contrast */
+    color: white; /* Light text color for readability */
+    text-align: center; /* Center-align the text */
+    padding: 20px 0; /* Padding for spacing around content */
+    font-size: 16px; /* Appropriate text size */
+     /* Fix position to the bottom */
+    left: 0;
+    bottom: 0;
+    width: 100%; /* Full width */
+}
+
+.footer-content p {
+    margin: 5px 0; /* Reduce margin for a compact look */
+}
+
+.footer-links {
+    margin-top: 10px; /* Space above links */
+}
+
+.footer-links a {
+    color: #ccc; /* Light gray for links for subtle contrast */
+    text-decoration: none; /* No underline */
+    margin: 0 10px; /* Horizontal spacing */
+}
+
+.footer-links a:hover {
+    color: #fff; /* White color on hover for visibility */
+}
+
+
+/* CSS khusus untuk halaman index.html */
+
+
+
+/* CSS khusus untuk halaman calculator.html */
+
+/* CSS khusus untuk halaman about.html */
+
+/* CSS khusus untuk halaman contact.html */
+
+/* CSS khusus untuk halaman materials.html */
+
+/* Reset default margin and padding */
+body, h1, h2, p, ul, li, input, button {
+    margin: 5;
+    padding: 0;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2e8ff; /* Warna latar belakang ungu muda */
+    color: #333; /* Warna teks */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Konten dimulai dari atas */
+    min-height: 10vh;
+}
+
+
+
+nav {
+    width: 100%;
+    background-color: #b39ddb; /* Warna latar belakang ungu muda untuk navbar */
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff; /* Warna teks putih untuk tautan navbar */
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #7e57c2; /* Warna ungu yang lebih gelap saat hover */
+}
+
+/* Header styles */
+header {
+    text-align: center;
+    background-color: #b39ddb; /* Warna latar belakang ungu muda untuk header */
+    color: #faf4f4; /* Warna teks putih */
+    width: 100%;
+    margin-top: 0; /* Hilangkan margin atas */
+}
+
+/* Content styles */
+.content {
+    text-align: center;
+    width: 100%; /* Mengambil lebar maksimal dari layar */
+    height: 100vh; /* Mengambil tinggi maksimal dari layar (1 viewport height) */
+    background-color: #fffdfd; /* Warna latar belakang putih untuk konten */
+    border-radius: 15px; /* Sudut bulat */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Form styles */
+form {
+    margin-top: 20px;
+}
+
+.row {
+    margin-bottom: 10px;
+}
+
+input[type="number"] {
+    padding: 10px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #d43bef; /* Warna border ungu muda */
+    margin-right: 10px;
+}
+
+button {
+    padding: 12px 24px;
+    background-color: #ffb74d; /* Warna latar belakang kuning muda */
+    color: #fff; /* Warna teks putih */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ffa726; /* Warna kuning yang lebih gelap saat hover */
+}
+
+#result {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f5f5f5; /* Warna latar belakang abu-abu muda untuk hasil */
+    border-radius: 5px;
+}
+/* Styles the scrollbar itself */
+::-webkit-scrollbar {
+    width: 8px; /* Adjusts the width of the vertical scrollbar */
+    height: 8px; /* Adjusts the height of the horizontal scrollbar */
+}
+
+/* Styles the track (part the thumb slides within) */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Light grey background on the track */
+}
+
+/* Styles the thumb (the part that's draggable) */
+::-webkit-scrollbar-thumb {
+    background: #888; /* Darker grey for the thumb */
+    border-radius: 4px; /* Rounded corners on the thumb */
+}
+
+/* Styles the thumb when it's hovered or clicked */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Even darker grey when hovered */
+}
+
+/* Kontak */
+.Kontak{
+background-color:#f2e8ff;
+min-height: 140vh;
+}
+
+.team-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+
+    
+}
+
+.profile {
+    flex: 1 1 200px; /* Setiap profil akan memiliki minimal lebar 200px dan tumbuh sesuai dengan ruang yang tersedia */
+    margin: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Penambahan shadow untuk estetika */
+    padding: 20px;
+    background-color: rgb(150, 150, 162); /* Warna latar belakang untuk setiap profil */
+    border-radius: 20px;
+    transition: 1s;
+    
+}
+.profile {
+    transition: 0.3s ease;
+    
+}
+
+.profile:hover {
+    transform: scale(1.1);
+    background-color: white;
+}
+
+@keyframes color{
+    0%{
+        background-color: #f9f9f9;
+        background-position: left;
+    }
+    100%{
+        background-color: rgb(150, 150, 162);
+      background-position: right;
+    }
+}
+
+.profile h3 {
+    color: #333; /* Warna teks untuk judul */
+}
+
+.profile p {
+    color: #666; /* Warna teks untuk paragraf */
+}
+
+
+
+#contact{
+    color: #000000;
+    text-align: center;
+   
+}
+.team-grid .profile h3{
+    color: #1c1c1c;
+    
+}
+.foto-andi img{
+    border-radius: 20px;
+    width: 100%;
+    height: 50%;
+}
+.foto-arya img{
+    width: 100%;
+    height: 50%;
+    border-radius: 20px;
+}
+.foto-kevin img{
+    width: 100%;
+    height: 50%;
+    border-radius: 20px;
+}
+.foto-rizki img{
+    width: 100%;
+    height: 50%;
+    border-radius: 20px;
+}
+.foto-shelva img{
+    width: 80%;
+    height: 50%;
+    border-radius: 20px;
+}
+.profile-shelva{
+    border-style: none;
+    border-radius: 20px;
+    background-color: rgb(150, 150, 162);
+    width: 25%;
+    
+    transition: 0.3s ease;
+    
+}
+.profile-shelva p{
+    color: #666;
+}
+.profile-shelva:hover{
+    transform: scale(1.1);
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+
+/* sub */
+
+.submarine {
+    width: 100px;
+    float: left;
+
+    animation: sub 5s infinite alternate;
+
+}
+@keyframes sub{
+    from{
+        transform: translateX(0px);
+    }
+    to {
+        transform: translateX(200px);
+    }
+}
+
+/* line */
+hr{
+    width: 300px;
+    height: 5px;
+    background-color: #000000;
+    display: inline-block;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+

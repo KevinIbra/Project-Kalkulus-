@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrix Determinant Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/817f72ffce.js" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
+</head>
+<body>
+    <header>
+        MathTricks
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Beranda</a></li>
+            <li><a href="#calculator">Kalkulator</a></li>
+            <li><a href="#materials">Materi Determinan</a></li>
+            <li><a href="#contact">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <div class="content" id="home">
+        <h1>Matrix Determinant Calculator</h2>
+        <p>Selamat datang di aplikasi kalkulator determinan matriks!</p>
+    </div>
+
+    <div class="content" id="calculator">
+        <h2>Kalkulator Determinan Matriks 3x3</h2>
+        <form id="matrix-form">
+            <div class="row">
+                <input type="number" id="a1" required>
+                <input type="number" id="a2" required>
+                <input type="number" id="a3" required>
+            </div>
+            <div class="row">
+                <input type="number" id="b1" required>
+                <input type="number" id="b2" required>
+                <input type="number" id="b3" required>
+            </div>
+            <div class="row">
+                <input type="number" id="c1" required>
+                <input type="number" id="c2" required>
+                <input type="number" id="c3" required>
+            </div>
+            <button type="button" onclick="calculateDeterminant()">Hitung Determinan</button>
+        </form>
+        <div id="result"></div>
+        <div id="steps"></div>
+    </div>
+
+   
+
+    <div class="content" id="materials">
+        <h2>Bahan</h2>
+        <h3>Mengenal Determinan Matriks 3x3</h3>
+        <p>Determinan matriks 3x3 adalah nilai skalar yang terkait dengan matriks persegi berukuran 3x3. Determinan memberikan informasi penting tentang matriks tersebut dan sering digunakan dalam berbagai aplikasi matematika dan fisika.</p>
+        <p>Rumus determinan matriks 3x3:</p>
+        <p>{det}(A) = {11}{22}{33} + {12}{23}{31} + {13}{21}{32} - {13}{22}{31} - {11}{23}{32} - {12}{21}{33} </p>
+    </div>
+
+<!-- Kontak -->
+    <div class="Kontak" id="contact" >
+        <h2>Member Of Group</h2>
+       <hr>
+        <div class="team-grid">
+            <div class="profile" data-aos="fade-down" data-aos-duration="1500" 
+            data-aos-delay="1000">
+                <h3>Andi Rafiyan </h3>
+                <div class="foto-andi"><img src="andi.jpg" alt=""></div>
+                <p>Mahasiswa Informatika <br> Universitas Siliwangi</p>
+                <a href="https://www.instagram.com/fiiyaaan_"></i><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"> <i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <div class="profile" data-aos="fade-down" data-aos="fade-down" data-aos-duration="2000" 
+            data-aos-delay="1000">
+                <h3>Kevin Ibrahimovic  </h3>
+                <div class="foto-kevin"><img src="WIN_20230922_13_43_20_Pro.jpg" alt=""></div>
+                <p>Mahasiswa Informatika <br>Universitas Siliwangi</p>
+                <a href=""></i><i class="fa-brands fa-instagram"></i></a>
+                <a href="mailto:237006073@student.unsil.ac.id"> <i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <div class="profile" data-aos="fade-down" data-aos="fade-down" data-aos-duration="2500" 
+            data-aos-delay="1000">
+                <h3>Muhamad Rizki                </h3>
+                <div class="foto-rizki"><img src="rizki.jpg" alt=""></div>
+                <p>Mahasiswa Informatika <br>Universitas Siliwangi</p>
+                <a href="https://www.instagram.com/rizkiist?igsh=MXhpZnlzbGJndjhmeQ=="></i><i class="fa-brands fa-instagram"></i></a>
+                <a href="mailto:237006085@student.unsil.ac.id"> <i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <div class="profile" data-aos="fade-down" data-aos="fade-down" data-aos-duration="3000" 
+            data-aos-delay="1000">
+                <h3>Arya Achmad Caesar                </h3>
+                <div class="foto-arya"><img src="arya 2.jpg" alt=""></div>
+                <p>Mahasiswa Informatika <br>Universitas Siliwangi</p>
+                <a href="https://www.instagram.com/aryaacaesar?igsh=MThkcWVvYXVzc3U3ZA%3D%3D&utm_source=qr"></i><i class="fa-brands fa-instagram"></i></a>
+                <a href="mailto:237006093@student.unsil.ac.id"> <i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <div class="profile-shelva" data-aos="fade-down" data-aos="fade-down" data-aos-duration="3000" 
+            data-aos-delay="1000">
+                <h3>Shelva Nur Fatimah                </h3>
+                <div class="foto-shelva"><img src="CECEP.jpg" alt="">
+                <p>Mahasiswa Informatika <br>Universitas Siliwangi</p>
+                <a href="https://www.instagram.com/_shlvaa7?igsh=MWZ6cnFlcjNvdmhiaA=="></i><i class="fa-brands fa-instagram"></i></a>
+                <a href="mailto:237006069@student.unsil.ac.id"> <i class="fa-solid fa-envelope"></i></a>
+            </div>
+            </div>
+        </div>
+        </div>
+       
+     <footer>           
+
+        <div class="footer-content">
+            <p>&copy; 2024 MathTricks = Matrix Determinant Calculator</p>
+    
+        </div>
+     
+    </footer>
+
+    <script src="script.js"></script>
+
+    <!-- Animasi -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    once: true,
+  });
+</script>
+<!-- animasi -->
+
+</body>
+</html>
